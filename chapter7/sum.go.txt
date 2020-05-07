@@ -1,0 +1,14 @@
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println(sum(1, 2, 3))
+}
+func sum(value ...int) (total int) {
+	for _, sum := range value {
+		total += sum
+	}
+	return
+
+}

@@ -1,0 +1,15 @@
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println(half(2))
+}
+
+func half(input int) (int, bool) {
+	result := input / 2
+	if result%2 == 0 {
+		return result, true
+	}
+	return result, false
+}
