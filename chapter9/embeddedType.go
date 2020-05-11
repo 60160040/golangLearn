@@ -2,11 +2,10 @@ package main
 
 import "fmt"
 
-/*func main() {
+func main() {
 	a := new(Android)
 	a.Talk() //OR a.Person.Talk()
 }
-*/
 
 // Android is Person
 type Android struct {
