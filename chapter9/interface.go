@@ -44,8 +44,23 @@ func totalArea(shapes ...Shape) float64 {
 	return area
 }
 
+//MultiShape is a lot of shape
+type MultiShape struct {
+	shapes []Shape
+}
+
+func (m *MultiShape) area() float64 {
+	var area float64
+	for _, s := range m.shapes {
+		area += s.area()
+	}
+	return area
+}
+
 func main() {
 	c := Circle{0, 0, 5}
 	r := Rectangle{0, 0, 10, 10}
 	fmt.Println(totalArea(&c, &r))
+	m := new(MultiShape)
+	fmt.Println(m.area())
 }
