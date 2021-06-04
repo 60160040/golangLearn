@@ -5,5 +5,5 @@ import "fmt"
 // this is a comment
 
 func main() {
-	fmt.Println("Hello, mp name is ZiXAX")
+	fmt.Println("Hello, my name is ZiXAX")
 }
